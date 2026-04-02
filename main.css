@@ -13,15 +13,12 @@ a {
   width: calc(100% - (165 * 2));
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-right: -15px;
-  margin-left: -15px;
   justify-content: space-between;
 }
 
