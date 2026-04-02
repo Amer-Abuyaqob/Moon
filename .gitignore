@@ -1,0 +1,30 @@
+# Moon - static HTML/CSS project
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Editor / IDE
+.idea/
+.vscode/
+
+# Cursor workspace-local files
+.cursor/
+.cursorrules
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Personal Files
+personal/
+
+# Optional temporary design/export work folders
+# Keep final production assets tracked.
+temp/
+tmp/
+scratch/
+drafts/
+figma-temp/
+exports-temp/
