@@ -8,7 +8,10 @@
   padding: 0;
 }
 
-ul,
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -19,8 +22,7 @@ p {
 }
 
 .container {
-  width: calc(100% - (165 * 2));
-  max-width: 1200px;
+  width: calc(100% - 330px);
   margin: 0 auto;
 }
 
@@ -53,6 +55,10 @@ p {
   gap: 30px;
 }
 
+.collections .card {
+  width: calc((100% - 90px) / 4);
+}
+
 .display-4 {
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -69,7 +75,11 @@ p {
   font-weight: 400;
 }
 
-.card .row {
+.collections img {
+  width: 100%;
+}
+
+.collections .card .row {
   padding-top: 23px;
   justify-content: center;
 }
