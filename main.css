@@ -1,3 +1,7 @@
+:root {
+  --color-warm-black: #3a3845;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +11,11 @@
 ul,
 a {
   text-decoration: none;
+}
+
+a,
+p {
+  color: var(--color-warm-black);
 }
 
 .container {
