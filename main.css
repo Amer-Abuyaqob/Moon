@@ -34,3 +34,33 @@ a {
 .header .nav .row {
   gap: 60px;
 }
+
+.collections {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.collections .row {
+  gap: 30px;
+}
+
+.display-4 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  /* TODO: add the wights as vars */
+  font-weight: 600;
+}
+
+.display-2 {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  /* TODO: add the wights as vars */
+  font-weight: 400;
+}
+
+.card .row {
+  padding-top: 23px;
+  justify-content: center;
+}
