@@ -55,8 +55,27 @@ p {
   gap: 30px;
 }
 
-.collections .card {
+.collections .card,
+.best-sellers .card {
   width: calc((100% - 90px) / 4);
+}
+
+/* Equal-height cards + buttons on one baseline (override .row align-items: center) */
+.best-sellers .row {
+  align-items: stretch;
+  row-gap: 40px;
+}
+
+.best-sellers .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.best-sellers .img-with-desc {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .display-4 {
@@ -67,7 +86,7 @@ p {
   font-weight: 600;
 }
 
-.display-2 {
+.display-2-regular {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -75,11 +94,56 @@ p {
   font-weight: 400;
 }
 
-.collections img {
+.display-2-simi-bold {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  /* TODO: add the wights as vars */
+  font-weight: 600;
+}
+
+.display-1 {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  /* TODO: add the wights as vars */
+  font-weight: 600;
+}
+
+.paragraph-default {
+  font-family: "Inter", sans-serif;
+  color: #807f86;
+  font-size: 14px;
+  line-height: 22px;
+  /* TODO: add the wights as vars */
+  font-weight: 600;
+}
+
+.collections img,
+.img-with-desc img {
   width: 100%;
 }
 
 .collections .card .row {
   padding-top: 23px;
   justify-content: center;
+}
+
+.best-sellers button {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--color-warm-black);
+  padding: 15px 81.5px;
+}
+
+.img-with-desc {
+  margin: auto 0;
+}
+
+.name-price {
+  margin: 24px 0;
+}
+
+.img-description {
+  margin-bottom: 20px;
 }
