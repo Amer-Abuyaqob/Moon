@@ -4,7 +4,13 @@
   padding: 0;
 }
 
+ul,
+a {
+  text-decoration: none;
+}
+
 .container {
+  width: calc(100% - (165 * 2));
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -13,6 +19,21 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 21.84px 0;
+  background-color: gray;
+}
+
+.header .menu .row {
+  gap: 24px;
+}
+
+.header .nav .row {
+  gap: 60px;
 }
