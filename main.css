@@ -130,7 +130,6 @@ button {
   align-items: stretch;
   row-gap: 40px;
   column-gap: 30px;
-  justify-content: flex-start;
 }
 
 .best-sellers .card {
@@ -145,14 +144,6 @@ button {
   display: flex;
   flex-direction: column;
   margin: 0;
-}
-
-/* Same image slot; cover fills column width — contain adds side letterboxing (extra “gap”) */
-.best-sellers .img-with-desc > img {
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center;
-  flex-shrink: 0;
 }
 
 .display-4 {
