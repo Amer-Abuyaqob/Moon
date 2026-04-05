@@ -126,20 +126,20 @@ button {
   width: calc((100% - 90px) / 4);
 }
 
-@media (600px < width <= 800px) {
-  .collections .row {
-    gap: 20px;
-  }
-
-  .collections .card,
-  .best-sellers .card {
-    width: calc((100% - 60px) / 3);
-  }
+.best-sellers .row {
+  align-items: stretch;
+  justify-content: flex-start;
+  row-gap: 40px;
+  column-gap: 30px;
 }
 
-@media (500px < width <= 600px) {
+@media (500px < width <= 800px) {
   .collections .row {
     gap: 20px;
+  }
+
+  .best-sellers .row {
+    column-gap: 20px;
   }
 
   .collections .card,
@@ -153,23 +153,20 @@ button {
     gap: 30px;
   }
 
+  .best-sellers .row {
+    column-gap: 30px;
+  }
+
   .collections .card,
   .best-sellers .card {
     width: calc((100% - 30px) / 2);
   }
 }
 
-.best-sellers .row {
-  align-items: stretch;
-  row-gap: 40px;
-  column-gap: 30px;
-}
-
 .best-sellers .card {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  flex: 0 1 calc((100% - 90px) / 4);
 }
 
 .best-sellers .img-with-desc {
@@ -251,7 +248,7 @@ button {
 }
 
 .title {
-  padding: 0 359.5px 48px;
+  padding-bottom: 48px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
